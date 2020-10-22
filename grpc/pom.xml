@@ -4,6 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<packaging>pom</packaging>
 	<modules>
+		<!--<module>grpc-maven</module>
+		<module>grpc-vs-rest</module>
+		<module>reactor-grpc</module>
+		<module>spring-grpc</module>-->
 		<module>spring-grpc-math-service</module>
 	</modules>
 	

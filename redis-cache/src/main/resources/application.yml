@@ -1,0 +1,22 @@
+# custom path for swagger-ui
+springdoc:
+  swagger-ui:
+    path: /swagger-ui-custom.html
+    operationsSorter: method
+  # custom path for api docs
+  api-docs:
+    path: /api-docs
+
+  ## for com.baeldung.restdocopenapi ##
+  version: foo.version
+
+# Redis Config
+spring:
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+
+server:
+  port: 8080
