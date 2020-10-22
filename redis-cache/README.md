@@ -11,6 +11,7 @@ see https://github.com/eugenp/tutorials/tree/master/spring-boot-modules/spring-b
 
 #### redis spring cache
 - https://www.baeldung.com/spring-cache-tutorial
+- https://www.journaldev.com/18141/spring-boot-redis-cache
 
 #### redis commands
 redis-server - start redis server
