@@ -33,4 +33,14 @@ public class FooController {
     public User getUser(@PathVariable long natId) {
         return userService.getUser(natId);
     }
+
+    @GetMapping("/refresh/{natId}")
+    public User getRefreshUser(@PathVariable long natId) {
+        return userService.getRefreshUser(natId);
+    }
+
+    @GetMapping("/delete/{natId}")
+    public User deleteUser(@PathVariable long natId) {
+        return userService.deleteUser(natId);
+    }
 }
