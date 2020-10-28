@@ -9,15 +9,18 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ab</groupId>
-	<artifactId>redis-cache-ri</artifactId>
+	<artifactId>consul-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>redis-cache-ri</name>
-	<description>Demo project for Spring Boot Redis Cache Reference Implementation</description>
+	<name>consul-demo</name>
+	<description>Demo project for Spring Boot Consul Reference Implementation</description>
 
 	<properties>
 		<java.version>11</java.version>
 		<springdoc.version>1.2.32</springdoc.version>
 		<springfox-swagger.version>3.0.0</springfox-swagger.version>
+		<spring-cloud-starter-consul.version>2.2.4.RELEASE</spring-cloud-starter-consul.version>
+		<kinguinltdhk.version>0.3.1</kinguinltdhk.version>
+		<start-class>com.ab.consul.ServiceDiscoveryApplication</start-class>
 	</properties>
 
 	<dependencies>
@@ -26,9 +29,21 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-redis</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-consul-all</artifactId>
+			<version>${spring-cloud-starter-consul.version}</version>
 		</dependency>
+		<!--<dependency>
+			<groupId>com.github.kinguinltdhk</groupId>
+			<artifactId>leadership-redis</artifactId>
+			<version>${kinguinltdhk.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.ecwid.redis</groupId>
+					<artifactId>redis-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

@@ -6,6 +6,7 @@
 	<modules>
 		<module>redis-cache</module>
 		<module>grpc</module>
+		<module>consul-demo</module>
 	</modules>
 	
 	<groupId>com.ab</groupId>
